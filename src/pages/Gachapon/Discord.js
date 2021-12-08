@@ -9,7 +9,7 @@ const Discord = () => {
 				<h2 className='discord-link-heading'>
 					Join the Club!
 				</h2>
-				<p>The Discord is open. Claim your OG status for mint priorities and added benefits. We will be releasing sneak peeks and organising multiple giveaways.</p>
+				<p>The Discord is open. Claim your OG status for mint priorities and added benefits.<br></br> We will be releasing sneak peeks and organising multiple giveaways.</p>
 
 				<Button
 					className='btns'

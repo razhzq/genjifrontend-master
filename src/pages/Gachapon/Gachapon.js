@@ -6,9 +6,11 @@ const Gachapon = () => {
 	return (
 		<div className="gachapon">
 			<div className='gachapon-content'>
+			{/* 
 				<h1 >Gachapon:</h1>
 				<p1>COMING </p1>
 				<p2>SOON</p2>
+			*/}
 			</div>
 			<div className="discord-join">
 				<Discord />

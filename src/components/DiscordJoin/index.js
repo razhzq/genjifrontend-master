@@ -25,7 +25,7 @@ const DiscordJoin = () => {
 					Join the Club!
 				</DiscordH1>
 				<DiscordP>
-					The Discord is open. Claim your OG status for mint priorities and added benefits. We will be releasing sneak peeks and organising multiple giveaways.
+					The Discord is open. Claim your OG status for mint priorities and added benefits.<br></br> We will be releasing sneak peeks and organising multiple giveaways.
 
 				</DiscordP>
 				<DiscordBtnWrapper>

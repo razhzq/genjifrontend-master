@@ -1,6 +1,6 @@
 
 .roadmap {
-  background-image: url('/src/assets/bgroadmap.jpg');
+  background-image: url('/src/assets/newroadmap.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,6 +14,7 @@
   padding-bottom: 100px;
   width: 100%;
   text-align: left;
+  min-height: 250vh;
 }
 
 .discords-item{
@@ -47,7 +48,7 @@
 
 .header-roadmap{  
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 300px;
 }
 
 .header-roadmap > p{
@@ -66,10 +67,12 @@
   background-color: transparent;
   font-size: 10px;
   padding-top: 250px;
-  width: 50%;
-  margin-left: 150px;
+  width: 100%;
+  margin-left: 550px;
   max-width: 800px;
   padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -171,5 +174,30 @@
 @media screen and (max-width: 600px) {
   .phase--container {
     padding-top: 150px;
+  }
+}
+
+
+.roadmap-title {
+  position: absolute;
+  margin-left: 1450px; 
+  margin-top: 50px; 
+}
+
+.roadmap-title>img{
+  width: 80%;
+
+}
+
+@media screen and (max-width: 992px) {
+  .roadmap-title {
+    width: 0;
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .roadmap-title {
+    width: 0;
+    display: none;
   }
 }

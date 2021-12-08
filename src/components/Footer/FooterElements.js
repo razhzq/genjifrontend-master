@@ -18,6 +18,7 @@ export const FooterRow = styled.div`
 	display: flex;   
 	align-items: center;
 	justify-content: space-around;
+	margin-right: 220px;
 	@media screen and (max-width: 600px) {
 		flex-direction: column;
 	}
@@ -65,26 +66,23 @@ export const Column2 = styled.div`
 	margin-bottom: 15px;
 	padding: 0 15px;
 	grid-area: col2;
+	text-align: left;
 `
 
 export const Column3 = styled.div`
-	border-radius: 10px;
 	max-width: 40px;
-	margin-left: 20px;
-	margin-right: 20px;
+
 `
 
 export const Column4 = styled.div`	
-	border-radius: 10px;
 	max-width: 40px;
-	margin-left: 20px;
-	margin-right: 20px;
+	
 `
 
 export const LogoRow = styled.div`
 	display: flex;	
-	justify-content: center;
-	align-items: center;
+	justify-content: space-evenly;
+	align-items: left;
 `
 
 export const ImgWrapper = styled.div`

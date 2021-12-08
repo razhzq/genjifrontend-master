@@ -1,12 +1,17 @@
 import './Roadmap.css'
 import Discord from './Discord'
 import Footer from './GachaFooter'
+import Roadmap from '../../assets/roadmp.png'
 
 const RoadMap = () => {
 	return (
 		<div className="roadmap">
 			<div className='phase--container'>
+				<div className="roadmap-title">
+                  <img src={Roadmap} />
+				</div>
 				<div className='header-roadmap'>
+					<h1>Whitepaper:</h1>
 					<div className='pre--phase'>
 						<h1>PRE-PHASE (Q3 2021)</h1>
 						<p>-Art pieces are drawn out and vigorously vetted through</p>

@@ -46,9 +46,11 @@ const RoadMapJap = () => {
 							</Button>
 						</RoadmapBtnWrapper>
 					</Content>
+				{/* 
 					<CharImg2 data-aos="fade-up">
 						<Img src={Char2} />
 					</CharImg2>
+				*/}	
 				</RoadmapWrapper>
 			</RoadmapContainer>
 		</>

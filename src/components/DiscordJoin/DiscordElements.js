@@ -45,7 +45,7 @@ export const DiscordContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	margin-right: 120px;
+	margin-right: 170px;
 	margin-bottom: 200px;
 	margin-top: 70px;
 	@media screen and (max-width: 600px) {

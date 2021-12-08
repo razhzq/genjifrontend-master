@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Accordion = props => {
   const [active, setActive] = useState(false)
@@ -17,10 +19,17 @@ const Accordion = props => {
     fontSize: '14px',
   }
 
+  useEffect(()=>{Aos.init({duration: 2000});}, []);
+
   return (
-    <div className="accordion-section">
+    <div className="accordion-section" data-aos='fade-up'> 
       <button className="accordion-title" onClick={toogleActive}>
-        <p style={titleStyle}>{props.title}</p>
+      <div className="pre-phase">
+        <h1>PRE-PHASE (Q3 2021)</h1>
+        <p>-Art pieces are drawn out and vigorously vetted through</p>
+        <p>-Roadmap is planned out</p>
+        <p>-Social media and domain registrations acquired</p>
+      </div>
         <span className={active ? 'accordion-icon rotate': 'accordion-icon'}>
         
         </span>

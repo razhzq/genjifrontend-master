@@ -8,6 +8,8 @@ import Intro from "../components/Intro";
 import RoadMapJap from "../components/RoadMapJap";
 import SliderSection from "../components/Slider";
 import Team from "../components/Team";
+import RoadmapPhase from "../components/Phase";
+import ImageTitle from "../components/ImageTitle";
 
 
 const Home = () => {
@@ -17,6 +19,8 @@ const Home = () => {
       <Intro />
       <SliderSection />
       <RoadMapJap />
+      <RoadmapPhase />
+      <ImageTitle />
       <Team />
       <FAQ />
       <DiscordJoin />

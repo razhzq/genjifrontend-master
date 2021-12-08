@@ -10,17 +10,20 @@ import {
 	ImgWrap,
 	Img,
 	DotContainer,
+	DotContainerImg,
 	IntroJap,
+	IntroJapImg,
 	IndiP,
 	IndiDiv
 } from './IntroElements'
 
-import Genji from '../../assets/generativetest.gif'
+import Genji from '../../assets/generative.mp4'
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import Dots from '../../assets/dots.png'
-import Jap from '../../assets/japintro.png'
+import Jap from '../../assets/char.png'
 import { useState, useEffect, useRef } from "react";
+import ReactPlayer from 'react-player/lazy'
 
 
 const Intro = () => {
@@ -28,10 +31,10 @@ const Intro = () => {
 	return (
 		<IntroContainer>
 			<DotContainer data-aos="fade-up">
-				<img width="80%" src={Dots} />
+				<DotContainerImg src={Dots} />
 			</DotContainer>
 			<IntroJap data-aos="fade-up">
-				<img width="60%" src={Jap} />
+				<IntroJapImg src={Jap} />
 			</IntroJap>
 			<IntroWrapper>
 				<IntroRow>
@@ -61,7 +64,7 @@ const Intro = () => {
 					</Column1>
 					<Column2>
 						<ImgWrap data-aos="fade-up">
-							<Img src={Genji} />
+						   <Img autoPlay loop muted src={Genji} />
 						</ImgWrap>
 					</Column2>
 				</IntroRow>

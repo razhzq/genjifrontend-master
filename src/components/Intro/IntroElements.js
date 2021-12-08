@@ -92,7 +92,7 @@ export const ImgWrap = styled.div`
 	}
 `
 
-export const Img = styled.img`
+export const Img = styled.video`
 	width: 80%;
 	margin: 0 0 10px 0;
 	padding-right: 0;
@@ -113,18 +113,41 @@ export const DotContainer = styled.div`
 	@media screen and (max-width: 992px) {
 		display: none;
 	}
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+`
+
+export const DotContainerImg = styled.img`
+    width: 80%;
+
+	@media screen and (max-width: 1600px) {
+		width: 0%;
+		
+	}
 `
 
 export const IntroJap = styled.div`
 	position: absolute;
-	width: 13.8vw;
+	width: 150px;
 	top: 50px;
 	right: 7vw;
 	max-width: 200px;
 	opacity: 0.5;
+	margin-top: 100px;
+	margin-right: 100px;
 	@media screen and (max-width: 992px) {
 		display: none;
 	}
+`
+
+export const IntroJapImg = styled.img`
+   width: 50%;
+   
+   @media screen and (max-width: 1600px) {
+	   width: 0%
+   }
 `
 
 

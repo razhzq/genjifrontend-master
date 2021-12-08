@@ -8,13 +8,14 @@ import {
   CountdownWrapper,
   HeroJap,
   HeroDate,
-  HeroP
+  HeroP,
+  HeroJapImg
 } from './HeroElements'
 
 import { useState, useEffect, useRef } from "react";
 import Genji from '../../assets/genji.jpg'
 import Countdown from 'react-countdown'
-import JapHero from '../../assets/japhero.png'
+import JapHero from '../../assets/metaverse.png'
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
@@ -64,7 +65,7 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroJap data-aos="fade-up">
-          <img width="100%" src={JapHero} />
+          <HeroJapImg src={JapHero} />
         </HeroJap>
           <HeroDate data-aos="fade-up">
           <HeroP>NOV</HeroP>

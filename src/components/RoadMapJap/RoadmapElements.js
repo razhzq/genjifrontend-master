@@ -9,7 +9,7 @@ export const RoadmapWrapper = styled.div`
 	display: inline-block;
 	vertical-align: middle;
 	z-index: 1;
-	height: 800px;
+	height: 500px;
 	width: 90%;
 	max-width: 1100px;
 	margin: 0 auto;

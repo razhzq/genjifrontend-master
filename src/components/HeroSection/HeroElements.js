@@ -76,6 +76,10 @@ export const HeroCountdown = styled.div`
     @media screen and (max-width: 480px) {
         font-size: 32px;
     }
+
+	@media screen and (max-width: 1600px) {
+		margin-left: 400px;
+	}
       
 `
 
@@ -91,16 +95,22 @@ export const HeroH1 = styled.h1`
 	@media screen and (max-width: 480px) {
 			font-size: 32px;
 	}
+
+
 `
 
 export const CountdownWrapper = styled.div`
 	font-size: 32px;
+
+
+	    
+
 `
 
 export const HeroJap = styled.div`
 	 width: 100px;
-    margin-top: 300px;
-	margin-left: 150px;
+    margin-top: 200px;
+	margin-left: 170px;
     position: absolute;
     float: left;
 	@media screen and (max-width: 768px) {
@@ -108,13 +118,31 @@ export const HeroJap = styled.div`
 		margin-left: 50px;
 	}
 `
+export const HeroJapImg = styled.img`
+    width: 60%;
+	
+	@media screen and (max-width:1600px) {
+	    display: none;
+		width: 0;
+	}
+`
 
 export const HeroDate = styled.div`
 	width: 200px;
 	margin-top: 300px;
-	margin-left: 1600px;
+	margin-left: 1400px;
 	position: absolute;
 	float: right;
+
+	@media screen and (max-width:768px) {
+		width: 100px;
+	}
+
+	@media screen and (max-width:1600px) {
+	    display: none;
+		width: 0;
+
+	}
 `
 
 export const HeroP = styled.p`
@@ -123,4 +151,14 @@ export const HeroP = styled.p`
 	text-align: center;
 	margin: 12px;
 	font-family: 'NexaBold';
+
+	@media screen and (max-width:1600px){
+	    display: none;
+		width: 0;
+		font-size: 0px;
+	}
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 `
