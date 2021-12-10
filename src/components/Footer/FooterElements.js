@@ -71,12 +71,18 @@ export const Column2 = styled.div`
 `
 
 export const Column3 = styled.div`
-	max-width: 40px;
+border-radius: 10px;
+max-width: 40px;
+margin-left: 20px;
+margin-right: 20px;
 
 `
 
 export const Column4 = styled.div`	
-	max-width: 40px;
+border-radius: 10px;
+max-width: 40px;
+margin-left: 20px;
+margin-right: 20px;
 	
 `
 

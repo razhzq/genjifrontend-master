@@ -29,6 +29,7 @@ export const FooterP = styled.p`
 	line-height: 24px;
 	color: #fff;
 	font-family: 'NexaBold';
+	padding-left:50px;
 `
 
 export const FooterTagLine = styled.p`
@@ -84,7 +85,7 @@ export const Column4 = styled.div`
 export const LogoRow = styled.div`
 	display: flex;	
 	justify-content: center;
-	align-items: center;
+	align-items: left;
 `
 
 export const ImgWrapper = styled.div`

@@ -29,6 +29,7 @@ export const FooterP = styled.p`
 	line-height: 24px;
 	color: #fff;
 	font-family: 'NexaBold';
+	padding-left: 50px;
 `
 
 export const FooterTagLine = styled.p`
