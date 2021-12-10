@@ -66,7 +66,7 @@ const NewNavbar = () => {
 	const toggleDrop = () => setIsAbout(!isAbout);
 	const toggling = () => setIsOpen(!isOpen);
 
-	useEffect(()=>{Aos.init({duration: 2000});}, []);
+	useEffect(()=>{Aos.init({duration: 1000});}, []);
 
 
 	return (
@@ -89,7 +89,7 @@ const NewNavbar = () => {
 										
 										{isOpen && (
 											<DropdownContainer>
-												<DropdownList data-aos="fade-up">
+												<DropdownList data-aos="fade-down">
 													<ListItem  >DAO</ListItem>
 													<ListItem  >Staking</ListItem>
 													<ListItem >Casino</ListItem>
@@ -122,7 +122,7 @@ const NewNavbar = () => {
 										
 										{isAbout && (
 											<DropdownContainer>
-												<DropdownList  data-aos="fade-up"> 
+												<DropdownList  data-aos="fade-down"> 
 													<ListItem  >Whitepaper</ListItem>
 													<ListItem  >Roadmap</ListItem>
 													<ListItem >Story</ListItem>

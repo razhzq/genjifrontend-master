@@ -78,7 +78,7 @@ export const HeroCountdown = styled.div`
     }
 
 	@media screen and (max-width: 1600px) {
-		margin-left: 400px;
+		margin-left: 100px;
 	}
       
 `

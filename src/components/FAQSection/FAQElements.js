@@ -45,7 +45,7 @@ export const Wrap = styled.div`
   text-align: center;
   cursor: pointer;
   h1 {
-    margin-right: 500px;
+    margin-right: 100px;
     padding: 2rem;
     font-family: 'NexaBold';
     font-size: 2rem;
@@ -59,7 +59,7 @@ export const Dropdown = styled.div`
 background: transparent;
 font-family: 'NexaLight';
 color: #F8F5B3;
-width: 100%;
+width: 1000px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -67,6 +67,8 @@ align-items: left;
 padding-left: 30px;
 text-align: left;
 -webkit-transition: all .25s ease;
+margin-bottom:20px;
+
 
 p {
   font-size: 2rem;

@@ -28,6 +28,7 @@ export const FooterP = styled.p`
 	max-width: 440px;
 	font-size: 18px;
 	line-height: 24px;
+	margin-left: 50px;
 	color: #fff;
 	font-family: 'NexaBold';
 `
