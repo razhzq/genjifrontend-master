@@ -16,12 +16,13 @@ import {
 	DropdownHeader,
 	DropdownContainer,
 	DropdownList,
-	ListItem
+	ListItem,
+	NavIconLinks
 } from './NavbarElements'
 import { animateScroll as scroll } from 'react-scroll';
 import NavbarLogo from '../../assets/navbarlogo.png'
-import Discord from '../../assets/discord_logo-01.png'
-import Twitter from '../../assets/twitter_logo-01.png'
+import Discord from '../../assets/discordlogo.png'
+import Twitter from '../../assets/twitterlogo.png'
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
@@ -89,11 +90,19 @@ const NewNavbar = () => {
 										
 										{isOpen && (
 											<DropdownContainer>
-												<DropdownList data-aos="fade-down">
-													<ListItem  >DAO</ListItem>
+												<DropdownList >
+													<ListItem  >
+														DAO
+														</ListItem>
 													<ListItem  >Staking</ListItem>
 													<ListItem >Casino</ListItem>
-													<ListItem >Gacha</ListItem>
+												
+													    <ListItem  >
+														
+											              Gacha
+														  
+													    </ListItem>
+													
 												</DropdownList>
 											</DropdownContainer>
 											)}	
@@ -102,7 +111,7 @@ const NewNavbar = () => {
 							</NavLinks>
 						</NavItem>
 						<NavItem>
-							<NavLinks to="/genjimerch" >
+							<NavLinks >
 								<NavLink>
 									<NavLinkPage>
 										<Link style={{ textDecoration: 'none', color: '#fff' }} to="/genjimerch">
@@ -122,7 +131,7 @@ const NewNavbar = () => {
 										
 										{isAbout && (
 											<DropdownContainer>
-												<DropdownList  data-aos="fade-down"> 
+												<DropdownList > 
 													<ListItem  >Whitepaper</ListItem>
 													<ListItem  >Roadmap</ListItem>
 													<ListItem >Story</ListItem>
@@ -135,18 +144,19 @@ const NewNavbar = () => {
 							</NavLinks>
 						</NavItem>
 						<NavItem>
-							<NavLinks to="discover"
+						    <NavIconLinks to="discover"
 								onClick={() => window.location.href = "https://discord.gg/WQpEx6wMqY"}
 							>
-								<img width="35" src={Discord} />
-							</NavLinks>
+								<img width="27" src={Discord} />
+								
+							</NavIconLinks>
 						</NavItem>
 						<NavItem>
-							<NavLinks to="discover"
+						    <NavIconLinks to="discover"
 								onClick={() => window.location.href = "https://twitter.com/genjiNFT"}
 							>
-								<img width="35" src={Twitter} />
-							</NavLinks>
+								<img width="27" src={Twitter} />
+							</NavIconLinks>
 						</NavItem>
 					</NavMenu>
 					<NavBtn>

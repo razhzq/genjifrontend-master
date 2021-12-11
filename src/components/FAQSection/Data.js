@@ -1,6 +1,6 @@
 export const Data = [
     {
-      question: 'Q: Why the name Genji, what does it mean?',
+      question: 'Why the name Genji, what does it mean?',
       answer: 'Genji was handpicked out from the many names that the devs have narrowed down. We chose Genji as it a Japanese name that means "Source, Heal, Peace", a ideology for us here at Genji to fulfill. Which is why here at Genji want to achieve by setting up a Solana Help Fund (SFH) alongside with delivering a unique collectibles that will benefit holders.'
     },
     {

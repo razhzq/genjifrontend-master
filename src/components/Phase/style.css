@@ -25,8 +25,17 @@
   }
   @media screen and (max-width: 1600px) {
     .accordion-title {
+      margin-left: 300px;
+      margin-right: 0px;
+      width: 600px;
+    }
+	}
+
+  @media screen and (max-width: 992px) {
+    .accordion-title {
       margin-left: 0px;
       margin-right: 0px;
+
     }
 	}
   
@@ -65,6 +74,8 @@
     
     
   }
+
+ 
   
   .pre-phase >h1{
     color: rgb(252, 252, 134); 
@@ -98,6 +109,21 @@
     text-align: left;
   }
 
+  @media screen and (max-width: 1600px) {
+    .phase-1 {
+      margin-left: 300px;
+      margin-right: 0px;
+    }
+	}
+
+  @media screen and (max-width: 992px) {
+    .phase-1 {
+      margin-left: 0px;
+      margin-right: 0px;
+      font-size: 10px;
+    }
+	}
+
   .phase-1 >h1{
     color: rgb(252, 252, 134); 
     padding-bottom: 20px;
@@ -126,6 +152,21 @@
     text-align: left;
   }
 
+  @media screen and (max-width: 1600px) {
+    .phase-2 {
+      margin-left: 300px;
+      margin-right: 0px;
+    }
+	}
+
+  @media screen and (max-width: 992px) {
+    .phase-2 {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+	}
+
+
   .phase-2 >p{
     padding-top: 5px;
     font-family: 'NexaLight';
@@ -145,6 +186,21 @@
     margin-right: 450px;
     text-align: left;
   }
+
+  @media screen and (max-width: 1600px) {
+    .phase-3 {
+      margin-left: 300px;
+      margin-right: 0px;
+    }
+	}
+
+  @media screen and (max-width: 992px) {
+    .phase-3 {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+	}
+
 
   .phase-3 >p{
     padding-top: 5px;

@@ -12,11 +12,13 @@ import {
 	Column3,
 	Column4,
 	FooterTagLine,
-	FooterCopyright
+	FooterCopyright,
+	DiscordImg,
+	TwitterImg
 } from './FooterElements'
 import FooterMain from '../../assets/footermain.png'
-import Discord from '../../assets/discord_logo-01.png'
-import Twitter from '../../assets/twitter_logo-01.png'
+import Discord from '../../assets/discordlogo.png'
+import Twitter from '../../assets/twitterlogo.png'
 import { animateScroll as scroll } from 'react-scroll'
 
 
@@ -51,12 +53,12 @@ const Footer = () => {
 						<LogoRow>
 							<Column3>
 								<Link onClick={() => window.location.href = "https://discord.gg/WQpEx6wMqY"} >
-									<img width="60px" src={Discord} />
+									<DiscordImg width="27" src={Discord} />
 								</Link>
 							</Column3>
 							<Column4>
 								<Link onClick={() => window.location.href = "https://twitter.com/genjiNFT"} >
-									<img width="60px" src={Twitter} />
+									<TwitterImg width="27" src={Twitter} />
 								</Link>
 
 							</Column4>

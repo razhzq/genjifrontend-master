@@ -8,7 +8,7 @@ export const DiscordContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding: 0 30px;
-	// height: 700px;
+    height: 600px;
 	position: relative;
 	z-index: 1;
 	background-image: url(${DiscordBanner});

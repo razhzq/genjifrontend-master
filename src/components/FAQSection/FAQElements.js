@@ -6,7 +6,7 @@ export const AccordionSection = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 700px;
+  height: 1000px;
   width: 100%;
   background: transparent;
   margin: 0;

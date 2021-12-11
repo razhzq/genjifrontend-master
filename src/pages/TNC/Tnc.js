@@ -1,7 +1,8 @@
 
 import './Tnc.css'
 import Discord from './Discord';
-import Footer from './GachaFooter';
+import Footer from './TncFooter';
+
 
 
 

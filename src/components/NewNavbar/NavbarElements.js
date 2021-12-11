@@ -205,7 +205,7 @@ export const DropdownContainer = styled.div`
 export const DropdownList = styled.ul`
     background: #fff;
     margin: 0;
-	margin-top: 20px;
+	margin-top: 10px;
     padding: 0;
     height: 0;
     border-bottom-left-radius: 5px;
@@ -238,5 +238,39 @@ export const ListItem = styled.li`
 	:last-of-type {
 		border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+	}
+`
+
+
+export const NavIconLinks = styled(LinkS)`
+    color: #fff;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 0 0.5rem;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 18px;
+	height: 50%;
+	width: 45%;
+	cursor: pointer;
+	border: 1px solid #fff;
+
+	background-image: linear-gradient(to top, #000 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.5s ease-in-out; /** I've changed the time for demo purposes **/
+    color: black;
+
+	:hover {
+		background-position: bottom;
+}
+
+    
+	&.active {
+	border-bottom: 3px solid #DA70D6;
+	}
+	@media screen and (max-width: 1200px) {
+		padding: 0;
 	}
 `

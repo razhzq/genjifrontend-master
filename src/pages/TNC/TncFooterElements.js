@@ -18,6 +18,7 @@ export const FooterRow = styled.div`
 	display: flex;   
 	align-items: center;
 	justify-content: space-around;
+	margin-right: 220px;
 	@media screen and (max-width: 600px) {
 		flex-direction: column;
 	}
@@ -69,23 +70,26 @@ export const Column2 = styled.div`
 `
 
 export const Column3 = styled.div`
-	border-radius: 10px;
-	max-width: 40px;
-	margin-left: 20px;
-	margin-right: 20px;
+	width: 40px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
 `
 
 export const Column4 = styled.div`
-	border-radius: 10px;
-	max-width: 40px;
-	margin-left: 20px;
-	margin-right: 20px;
+	width: 40px;
+    height: 50px;
+    margin-left: 20px;
+margin-right: 20px;
 `
 
 export const LogoRow = styled.div`
 	display: flex;	
 	justify-content: center;
 	align-items: left;
+	height: 80px;
+	margin-left: 30px;
 `
 
 export const ImgWrapper = styled.div`
@@ -98,4 +102,12 @@ export const Img = styled.img`
 	width: 60%;
 	margin: 0 0 10px 0;
 	padding-right: 0;
+`
+
+export const TncDiscordImg = styled.img`
+    width: 27px;
+`
+
+export const TncTwitterImg = styled.img`
+    width: 27px;
 `
