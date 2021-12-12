@@ -7,7 +7,7 @@
 	justify-content: center;
 	align-items: center;        
 	background-size: 100% 100%;
-  height: auto;	
+    height: auto;	
 }
 
 .discord-link {
@@ -19,7 +19,7 @@
 	font-size: 20px;
 	width: 50%;
 	margin-bottom: 24px;
-	padding: 70px 24px 200px;
+	padding: 70px 100px 200px;
 	color: rgb(17, 17, 17);
 }
 .discord-link> h2{

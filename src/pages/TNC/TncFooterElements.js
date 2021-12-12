@@ -18,7 +18,7 @@ export const FooterRow = styled.div`
 	display: flex;   
 	align-items: center;
 	justify-content: space-around;
-	margin-right: 220px;
+	margin-left: 10px;
 	@media screen and (max-width: 600px) {
 		flex-direction: column;
 	}
@@ -30,7 +30,7 @@ export const FooterP = styled.p`
 	line-height: 24px;
 	color: #fff;
 	font-family: 'NexaBold';
-	padding-left:50px;
+	padding-left: 50px;
 `
 
 export const FooterTagLine = styled.p`
@@ -60,6 +60,7 @@ export const Column1 = styled.div`
 	padding: 0 15px;
 	grid-area: col1;
 	text-align: left;
+	font-family: 'NexaBold';   
 `
 
 export const Column2 = styled.div`
@@ -70,18 +71,38 @@ export const Column2 = styled.div`
 `
 
 export const Column3 = styled.div`
-	width: 40px;
-    height: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+width: 40px;
+height: 50px;
+margin-left: 20px;
+margin-right: 20px;
+border: 1px solid #fff;
     
+	background-image: linear-gradient(to top, #000 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.5s ease-in-out; /** I've changed the time for demo purposes **/
+    color: black;
+
+	:hover {
+		background-position: bottom;
+
 `
 
 export const Column4 = styled.div`
-	width: 40px;
-    height: 50px;
-    margin-left: 20px;
+width: 40px;
+height: 50px;
+margin-left: 20px;
 margin-right: 20px;
+border: 1px solid #fff;
+
+    background-image: linear-gradient(to top, #000 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.5s ease-in-out; /** I've changed the time for demo purposes **/
+    color: black;
+
+	:hover {
+		background-position: bottom;
 `
 
 export const LogoRow = styled.div`
@@ -104,10 +125,18 @@ export const Img = styled.img`
 	padding-right: 0;
 `
 
-export const TncDiscordImg = styled.img`
-    width: 27px;
+export const DiscordImg = styled.img`
+position: absolute;
+width: 30px;
+margin-top: 10px;
+margin-left:5px;
 `
 
-export const TncTwitterImg = styled.img`
-    width: 27px;
+export const TwitterImg = styled.img`
+position: absolute;
+width: 30px;
+margin-top: 10px;
+margin-left:5px;
+
+
 `
