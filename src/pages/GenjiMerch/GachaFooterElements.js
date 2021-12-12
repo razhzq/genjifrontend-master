@@ -69,23 +69,46 @@ export const Column2 = styled.div`
 `
 
 export const Column3 = styled.div`
-	border-radius: 10px;
-	max-width: 40px;
-	margin-left: 20px;
-	margin-right: 20px;
+width: 40px;
+height: 50px;
+margin-left: 20px;
+margin-right: 20px;
+border: 1px solid #fff;
+	
+    background-image: linear-gradient(to top, #000 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.5s ease-in-out; /** I've changed the time for demo purposes **/
+    color: black;
+
+	:hover {
+		background-position: bottom;
 `
 
 export const Column4 = styled.div`
-	border-radius: 10px;
-	max-width: 40px;
-	margin-left: 20px;
-	margin-right: 20px;
+width: 40px;
+height: 50px;
+margin-left: 20px;
+margin-right: 20px;
+border: 1px solid #fff;
+
+
+	background-image: linear-gradient(to top, #000 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.5s ease-in-out; /** I've changed the time for demo purposes **/
+    color: black;
+
+	:hover {
+		background-position: bottom;
 `
 
 export const LogoRow = styled.div`
-	display: flex;	
-	justify-content: center;
-	align-items: center;
+    display: flex;	
+	justify-content: space-evenly;
+	align-items: left;
+	margin-left: 27px;
+	height: 80px;
 `
 
 export const ImgWrapper = styled.div`
@@ -98,4 +121,17 @@ export const Img = styled.img`
 	width: 60%;
 	margin: 0 0 10px 0;
 	padding-right: 0;
+`
+export const DiscordImg = styled.img`
+width: 30px;
+margin-top: 10px;
+margin-left: 5px;
+ 
+`
+
+export const TwitterImg = styled.img`
+width: 30px;
+margin-top: 10px;
+margin-left: 5px;
+  
 `

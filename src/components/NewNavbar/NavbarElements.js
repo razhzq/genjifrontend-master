@@ -14,6 +14,7 @@ background: transparent;
   position: absolute;
   top: 0;
   z-index: 999;
+  font-family: NexaLight;
 
 
     @media screen and (max-width: 960px) {

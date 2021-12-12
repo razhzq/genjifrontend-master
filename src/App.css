@@ -29,9 +29,7 @@
   src: url('/src/assets/Fonts/nexabold.otf') format('opentype')
 }
 
-* {
-  font-family: 'NexaLight';
-}
+
 .home-slider {
   padding: 0 1.5rem;
 }

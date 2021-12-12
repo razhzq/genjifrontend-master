@@ -162,7 +162,7 @@
 .roadmap-footer {  
   width: 100%;
   margin-top: 50px;
-  text-align: center;    
+  text-align: left;    
 }
  
 @media screen and (max-width: 992px) {

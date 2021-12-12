@@ -13,8 +13,8 @@ import {
     Column4,
     FooterTagLine,
     FooterCopyright, 
-    TncDiscordImg,
-    TncTwitterImg
+    DiscordImg,
+	TwitterImg
 } from './TncFooterElements'
 import FooterMain from '../../assets/footermain.png'
 import Discord from '../../assets/discordlogo.png'
@@ -40,9 +40,9 @@ const Footer = () => {
                           <FooterCopyright> ©2021 GENJI. All rights reserved</FooterCopyright>
                       </Column1>
                       <Column2>
-                      <FooterP>
+                            <FooterP>
                               <Link onClick={toggleHome}  style={{ textDecoration: 'none', color: '#fff'}} to='/'>Home</Link>
-                           </FooterP>
+                            </FooterP>
                            <FooterP>
                              <Link onClick={toggleHome} style={{ textDecoration: 'none', color: '#fff'}} to='/terms-and-conditions'>Terms & Condition</Link>
                            </FooterP>
@@ -51,17 +51,17 @@ const Footer = () => {
                            </FooterP>
                            
                            <LogoRow>
-                               <Column3>
-                                  <Link onClick={() => window.location.href = "https://discord.gg/WQpEx6wMqY"} >
-                                      <TncDiscordImg  src={Discord} />
-                                  </Link>
-                               </Column3>
-                               <Column4>
-                                  <Link onClick={() => window.location.href = "https://twitter.com/genjiNFT"} >
-                                  <TncTwitterImg  src={Twitter} />
-                                  </Link>
-                                   
-                               </Column4>
+                           <Column3>
+								<Link onClick={() => window.location.href = "https://discord.gg/WQpEx6wMqY"} >
+									<DiscordImg width="30" src={Discord} />
+								</Link>
+							</Column3>
+							<Column4>
+								<Link onClick={() => window.location.href = "https://twitter.com/genjiNFT"} >
+									<TwitterImg width="30" src={Twitter} />
+								</Link>
+
+							</Column4>
                            </LogoRow>
                       </Column2>
                   </FooterRow>
