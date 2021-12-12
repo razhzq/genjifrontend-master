@@ -74,9 +74,12 @@ const HeroSection = () => {
           <HeroP>SGT</HeroP>
         </HeroDate> 
          <HeroCountdown>
-                    <HeroH1>Countdown:</HeroH1>
+                    <HeroH1>Countdown Mint Day:</HeroH1>
                     <CountdownWrapper>
+                      {/* 
                     {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+                    */}
+                    <span>TBD</span>
                     </CountdownWrapper>
                    
                 </HeroCountdown>

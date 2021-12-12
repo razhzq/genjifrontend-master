@@ -27,7 +27,7 @@
     .accordion-title {
       margin-left: 300px;
       margin-right: 0px;
-      width: 600px;
+      max-width: 800px;
     }
 	}
 
@@ -71,9 +71,24 @@
     background-color: transparent;
     color: #fff;
     font-size: 15px;
+    display: block;
+
     
     
   }
+  @media screen and (max-width: 1600px) {
+    .pre-phase  {
+      font-size: 20px;
+      width: 400px;
+    }
+	}
+
+  @media screen and (max-width: 992px) {
+    .pre-phase  {
+      font-size: 20px;
+      width: 400px;
+    }
+	}
 
  
   
@@ -81,6 +96,7 @@
     color: rgb(252, 252, 134); 
     padding-bottom: 20px;
     font-family: 'NexaBold';
+   
   }
   .pre-phase >p{
     padding-top: 5px;
@@ -88,6 +104,14 @@
     font-size: 21px;
     
   }
+
+  @media screen and (max-width: 992px) {
+    .pre-phase >h1 {
+      font-size: 20px;
+      max-width: 400px;
+    }
+	}
+
   .accordion-title >span{
     padding-top: 5px;
     font-family: 'NexaLight';

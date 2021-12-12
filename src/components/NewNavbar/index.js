@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { Link as LinkS } from 'react-scroll'
 import {
 	Nav,
 	NavLogo,
@@ -80,6 +81,7 @@ const NewNavbar = () => {
 
 				<NavWrapper style={{display: show ? "flex" : "none"}}>
 					<NavMenu>
+						{/* 
 						<NavItem>
 							<NavLinks to="about" >
 								<NavLink>
@@ -96,16 +98,28 @@ const NewNavbar = () => {
 														</ListItem>
 													<ListItem  >Staking</ListItem>
 													<ListItem >Casino</ListItem>
-												
+												<LinkS onClick={() => window.location.href = "/gachapon"}>
 													    <ListItem  >
 														
 											              Gacha
 														  
 													    </ListItem>
-													
+												</LinkS>
 												</DropdownList>
 											</DropdownContainer>
 											)}	
+									</NavLinkPage>
+								</NavLink>
+							</NavLinks>
+						</NavItem>
+						*/}
+						<NavItem>
+							<NavLinks >
+								<NavLink>
+									<NavLinkPage>
+										<Link style={{ textDecoration: 'none', color: '#fff' }} to="/gachapon">
+											Gachapon
+										</Link>
 									</NavLinkPage>
 								</NavLink>
 							</NavLinks>
@@ -121,6 +135,18 @@ const NewNavbar = () => {
 								</NavLink>
 							</NavLinks>
 						</NavItem>
+						<NavItem>
+							<NavLinks >
+								<NavLink>
+									<NavLinkPage>
+										<Link style={{ textDecoration: 'none', color: '#fff' }} to="/roadmap">
+											Roadmap
+										</Link>
+									</NavLinkPage>
+								</NavLink>
+							</NavLinks>
+						</NavItem>
+						{/* 
 						<NavItem>
 							<NavLinks to="discover">
 								<NavLink>
@@ -143,6 +169,7 @@ const NewNavbar = () => {
 								</NavLink>
 							</NavLinks>
 						</NavItem>
+						*/}
 						<NavItem>
 						    <NavIconLinks to="discover"
 								onClick={() => window.location.href = "https://discord.gg/WQpEx6wMqY"}
@@ -170,4 +197,3 @@ const NewNavbar = () => {
 }
 
 export default NewNavbar;
-

@@ -31,6 +31,7 @@ export const FAQTitle = styled.h1`
 export const Container = styled.div`
   position: relative;
   top: 1%;
+  width: 70%;
   
 `
 
