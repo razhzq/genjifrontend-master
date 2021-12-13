@@ -56,11 +56,13 @@ export const HeroContent = styled.div`
 
 
 export const HeroCountdown = styled.div`
-	  width: 700px;
+	  width: 80%;
+		max-width: 700px;
       background-color: #fff;
       border-radius: 90px;
       margin-top: 850px;
-	  margin-left: 600px;
+	  margin-left: auto;
+		margin-right: auto;
       flex-direction: column;
       display: flex;
       align-items: center;
@@ -72,13 +74,14 @@ export const HeroCountdown = styled.div`
         margin-top: 200px;
         padding-bottom: 5px;
         visibility: hidden;
+				display: none;
     }
     @media screen and (max-width: 480px) {
         font-size: 32px;
     }
 
 	@media screen and (max-width: 1600px) {
-		margin-left: 450px;
+		margin-left: auto;
 	}
       
 `

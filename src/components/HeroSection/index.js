@@ -39,7 +39,7 @@ const HeroSection = () => {
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   const [year] = useState(new Date().getFullYear());
-  useEffect(()=>{Aos.init({duration: 2000});}, []);
+  useEffect(() => { Aos.init({ duration: 2000 }); }, []);
   useEffect(() => {
     setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
@@ -67,22 +67,22 @@ const HeroSection = () => {
         <HeroJap data-aos="fade-up">
           <HeroJapImg src={JapHero} />
         </HeroJap>
-          <HeroDate data-aos="fade-up">
+        <HeroDate data-aos="fade-up">
           <HeroP>NOV</HeroP>
           <HeroP>30TH</HeroP>
           <HeroP>8PM</HeroP>
           <HeroP>SGT</HeroP>
-        </HeroDate> 
-         <HeroCountdown>
-                    <HeroH1>Countdown Mint Day:</HeroH1>
-                    <CountdownWrapper>
-                      {/* 
+        </HeroDate>
+        <HeroCountdown>
+          <HeroH1>Countdown Mint Day:</HeroH1>
+          <CountdownWrapper>
+            {/* 
                     {timerComponents.length ? timerComponents : <span>Time's up!</span>}
                     */}
-                    <span>TBD</span>
-                    </CountdownWrapper>
-                   
-                </HeroCountdown>
+            <span>TBD</span>
+          </CountdownWrapper>
+
+        </HeroCountdown>
       </HeroContent>
     </HeroContainer>
   );

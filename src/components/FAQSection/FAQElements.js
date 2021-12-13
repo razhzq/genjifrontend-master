@@ -31,8 +31,8 @@ export const FAQTitle = styled.h1`
 export const Container = styled.div`
   position: relative;
   top: 1%;
-  width: 70%;
-  
+  width: 90%;
+  max-width: 1100px
 `
 
 export const Wrap = styled.div`
@@ -45,11 +45,18 @@ export const Wrap = styled.div`
   height: 80px;
   text-align: center;
   cursor: pointer;
-  h1 {
-    margin-right: 100px;
+  h1 {    
     padding: 2rem;
     font-family: 'NexaBold';
     font-size: 2rem;
+    @media screen and (max-width: 768px) {
+      text-align: left;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 1.5rem;
+      padding: 1rem;
+      text-align: left;
+    }
   }
   span {
     margin-right: 1.5rem;
@@ -57,23 +64,26 @@ export const Wrap = styled.div`
 `
 
 export const Dropdown = styled.div`
-background: transparent;
-font-family: 'NexaLight';
-color: #F8F5B3;
-width: 1000px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: left;
-padding-left: 30px;
-text-align: left;
--webkit-transition: all .25s ease;
-margin-bottom:20px;
+  background: transparent;
+  font-family: 'NexaLight';
+  color: #F8F5B3;
+  width: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 30px;
+  text-align: left;
+  -webkit-transition: all .25s ease;
+  margin-bottom:20px;
 
 
-p {
-  font-size: 2rem;
-}
+  p {
+    font-size: 2rem;
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;      
+    }
+  }
 
 // enter from
 &.fade-enter {

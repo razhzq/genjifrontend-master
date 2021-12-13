@@ -20,7 +20,7 @@ const Accordion = props => {
 
     setClicked('pre-phase');
   }
-  
+
   const titleStyle = {
     fontWeight: 600,
     fontSize: '14px',
@@ -28,20 +28,20 @@ const Accordion = props => {
   const [clicked, setClicked] = useState(false);
 
 
-  useEffect(()=>{Aos.init({duration: 2000});}, []);
+  useEffect(() => { Aos.init({ duration: 2000 }); }, []);
 
   return (
-    <div className="accordion-section" data-aos='fade-up'> 
+    <div className="accordion-section load-map-phase" data-aos='fade-up'>
       <button className="accordion-title" onClick={() => toogleActive('pre-phase')} key={'pre-phase'}>
-      <div className="pre-phase">
-        <h1>PRE-PHASE (Q3 2021)</h1>
-        <p>-Art pieces are drawn out and vigorously vetted through</p>
-        <p>-Roadmap is planned out</p>
-        <p>-Social media and domain registrations acquired</p>
-      </div>
-      <span>{clicked === 'pre-phase' ? <FiMinus /> :<FiPlus /> }</span>
-        
-       
+        <div className="pre-phase">
+          <h1>PRE-PHASE (Q3 2021)</h1>
+          <p>-Art pieces are drawn out and vigorously vetted through</p>
+          <p>-Roadmap is planned out</p>
+          <p>-Social media and domain registrations acquired</p>
+        </div>
+        <span>{clicked === 'pre-phase' ? <FiMinus /> : <FiPlus />}</span>
+
+
       </button>
 
       <div
