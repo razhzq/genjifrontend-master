@@ -44,7 +44,7 @@
   margin-top: 1rem;
 }
 .load-map-phase .accordion-content {
-  max-height: unset !important;
+  /* max-height: unset !important; */
 }
 .load-map-phase .accordin-contents {
   width: 90%;
