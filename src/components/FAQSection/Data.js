@@ -1,7 +1,7 @@
 export const Data = [
     {
       question: 'Why the name Genji, what does it mean?',
-      answer: 'Genji was handpicked out from the many names that the devs have narrowed down. We chose Genji as it is a Japanese name that means "Source, Heal, Peace", a ideology for us here at Genji to fulfill. Which is why here at Genji want to achieve by setting up a Solana Help Fund (SFH) alongside with delivering a unique collectibles that will benefit holders.'
+      answer: 'Genji was handpicked out from the many names that the devs have narrowed down. We chose Genji as it is a Japanese name that means "Source, Heal, Peace", a ideology for us here at Genji to fulfill.'
     },
     {
       question: 'What is Genji NFT?',
@@ -13,7 +13,7 @@ export const Data = [
     },
     {
       question: 'How much to mint?',
-      answer: '0.5 SOL - 0.8 SOL'
+      answer: '0.5 SOL - 0.8 SOL (depending on the price of Solana)'
     },
     {
       question: ' What is Genji games?',
