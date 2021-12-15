@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { Link as LinkS } from 'react-scroll'
 import {
 	Nav,
 	NavLogo,
@@ -81,7 +80,7 @@ const NewNavbar = () => {
 
 				<NavWrapper style={{display: show ? "flex" : "none"}}>
 					<NavMenu>
-						{/* 
+						
 						<NavItem>
 							<NavLinks to="about" >
 								<NavLink>
@@ -98,13 +97,13 @@ const NewNavbar = () => {
 														</ListItem>
 													<ListItem  >Staking</ListItem>
 													<ListItem >Casino</ListItem>
-												<LinkS onClick={() => window.location.href = "/gachapon"}>
+												
 													    <ListItem  >
-														
-											              Gacha
-														  
+														   <Link style={{ textDecoration: 'none', color: 'inherit' }} to="/gachapon">
+											                 Gachapon
+										                   </Link>  
 													    </ListItem>
-												</LinkS>
+												
 												</DropdownList>
 											</DropdownContainer>
 											)}	
@@ -112,18 +111,7 @@ const NewNavbar = () => {
 								</NavLink>
 							</NavLinks>
 						</NavItem>
-						*/}
-						<NavItem>
-							<NavLinks >
-								<NavLink>
-									<NavLinkPage>
-										<Link style={{ textDecoration: 'none', color: '#fff' }} to="/gachapon">
-											Gachapon
-										</Link>
-									</NavLinkPage>
-								</NavLink>
-							</NavLinks>
-						</NavItem>
+						
 						<NavItem>
 							<NavLinks >
 								<NavLink>
@@ -135,18 +123,8 @@ const NewNavbar = () => {
 								</NavLink>
 							</NavLinks>
 						</NavItem>
-						<NavItem>
-							<NavLinks >
-								<NavLink>
-									<NavLinkPage>
-										<Link style={{ textDecoration: 'none', color: '#fff' }} to="/roadmap">
-											Roadmap
-										</Link>
-									</NavLinkPage>
-								</NavLink>
-							</NavLinks>
-						</NavItem>
-						{/* 
+					
+						
 						<NavItem>
 							<NavLinks to="discover">
 								<NavLink>
@@ -159,7 +137,11 @@ const NewNavbar = () => {
 											<DropdownContainer>
 												<DropdownList > 
 													<ListItem  >Whitepaper</ListItem>
-													<ListItem  >Roadmap</ListItem>
+													<ListItem  >
+													    <Link style={{ textDecoration: 'none', color: 'inherit' }} to="/roadmap">
+											                 Roadmap
+										                </Link>  
+													</ListItem>
 													<ListItem >Story</ListItem>
 												
 												</DropdownList>
@@ -169,7 +151,7 @@ const NewNavbar = () => {
 								</NavLink>
 							</NavLinks>
 						</NavItem>
-						*/}
+		
 						<NavItem>
 						    <NavIconLinks to="discover"
 								onClick={() => window.location.href = "https://discord.gg/WQpEx6wMqY"}

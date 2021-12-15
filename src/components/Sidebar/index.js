@@ -13,18 +13,18 @@ import { SidebarContainer,
 
 
 
-const Sidebar = ({ isOpen, toggle }) => {
+const Sidebar = ({ side, toggleSide }) => {
     return ( 
-        <SidebarContainer isOpen={isOpen} onClick={toggle}>
-            <Icon onClick={toggle}>
+        <SidebarContainer side={side} onClick={toggleSide}>
+            <Icon onClick={toggleSide}>
                
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarPage to="" onClick={toggle}>Community</SidebarPage>
-                    <SidebarPage to="/roadmap" onClick={toggle}>RoadMap</SidebarPage>
-                    <SidebarPage to="/genjimerch" onClick={toggle}>GenjiMerch</SidebarPage>
-                    <SidebarPage to="/gachapon" onClick={toggle}>Gachapon</SidebarPage>
+                    <SidebarPage to="" onClick={toggleSide}>Community</SidebarPage>
+                    <SidebarPage to="/roadmap" onClick={toggleSide}>RoadMap</SidebarPage>
+                    <SidebarPage to="/genjimerch" onClick={toggleSide}>GenjiMerch</SidebarPage>
+                    <SidebarPage to="/gachapon" onClick={toggleSide}>Gachapon</SidebarPage>
                 </SidebarMenu>
                 <SideBtnWrap>
                 
