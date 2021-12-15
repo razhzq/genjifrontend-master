@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import {
 	Nav,
 	NavLogo,
@@ -17,7 +17,8 @@ import {
 	DropdownContainer,
 	DropdownList,
 	ListItem,
-	NavIconLinks
+	NavIconLinks,
+	DropDownNavLinkPage
 } from './NavbarElements'
 import { animateScroll as scroll } from 'react-scroll';
 import NavbarLogo from '../../assets/navbarlogo.png'
@@ -29,6 +30,8 @@ import "aos/dist/aos.css";
 
 
 const NewNavbar = () => {
+
+	const history = useHistory();
 
 	const connectWallet = () => {
 		try {
@@ -62,13 +65,12 @@ const NewNavbar = () => {
 	//dropdown
 	const [isOpen, setIsOpen] = useState(false);
 	const [isAbout, setIsAbout] = useState(false);
-	
-	
+
+
 	const toggleDrop = () => setIsAbout(!isAbout);
 	const toggling = () => setIsOpen(!isOpen);
 
-	useEffect(()=>{Aos.init({duration: 1000});}, []);
-
+	useEffect(() => { Aos.init({ duration: 1000 }); }, []);	
 
 	return (
 		<Nav scrollNav={scrollNav}>
@@ -78,40 +80,42 @@ const NewNavbar = () => {
 					<img src="https://img.icons8.com/material-outlined/24/000000/list.png" />
 				</MobileIcon>
 
-				<NavWrapper style={{display: show ? "flex" : "none"}}>
+				<NavWrapper style={{ display: show ? "flex" : "none" }}>
 					<NavMenu>
-						
 						<NavItem>
-							<NavLinks to="about" >
+							<NavLinks >
 								<NavLink>
-									<NavLinkPage>
-									<DropdownHeader onClick={toggling}>
+									<DropDownNavLinkPage>
+										<DropdownHeader onClick={() => {toggling(); setIsAbout(false)}}>
 											Community
-											</DropdownHeader>
-										
+										</DropdownHeader>
+
 										{isOpen && (
 											<DropdownContainer>
 												<DropdownList >
-													<ListItem  >
+													<ListItem >
 														DAO
-														</ListItem>
+													</ListItem>
 													<ListItem  >Staking</ListItem>
 													<ListItem >Casino</ListItem>
-												
-													    <ListItem  >
-														   <Link style={{ textDecoration: 'none', color: 'inherit' }} to="/gachapon">
-											                 Gachapon
-										                   </Link>  
-													    </ListItem>
-												
+
+													<ListItem onClick={() => {history.push('/gachapon'); setIsOpen(false)}}>
+														<Link
+															style={{ textDecoration: 'none', color: 'inherit' }}
+															to="/gachapon"
+															onClick={(e) => { e.preventDefault(); }}
+														>
+															Gachapon
+														</Link>
+													</ListItem>
 												</DropdownList>
 											</DropdownContainer>
-											)}	
-									</NavLinkPage>
+										)}
+									</DropDownNavLinkPage>
 								</NavLink>
 							</NavLinks>
 						</NavItem>
-						
+
 						<NavItem>
 							<NavLinks >
 								<NavLink>
@@ -123,45 +127,48 @@ const NewNavbar = () => {
 								</NavLink>
 							</NavLinks>
 						</NavItem>
-					
-						
+
+
 						<NavItem>
 							<NavLinks to="discover">
 								<NavLink>
-									<NavLinkPage to="">
-									<DropdownHeader onClick={toggleDrop}>
+									<DropDownNavLinkPage to="">
+										<DropdownHeader onClick={() => {toggleDrop(); setIsOpen(false)}}>
 											About
-											</DropdownHeader>
-										
+										</DropdownHeader>
+
 										{isAbout && (
 											<DropdownContainer>
-												<DropdownList > 
+												<DropdownList >
 													<ListItem  >Whitepaper</ListItem>
-													<ListItem  >
-													    <Link style={{ textDecoration: 'none', color: 'inherit' }} to="/roadmap">
-											                 Roadmap
-										                </Link>  
+													<ListItem onClick={() => {history.push('/roadmap'); setIsAbout(false)}} >
+														<Link 
+															style={{ textDecoration: 'none', color: 'inherit' }} 
+															to="/roadmap"
+															onClick={(e) => { e.preventDefault(); }}
+															>
+															Roadmap
+														</Link>
 													</ListItem>
 													<ListItem >Story</ListItem>
-												
+
 												</DropdownList>
 											</DropdownContainer>
-											)}	
-								   	 </NavLinkPage>
+										)}
+									</DropDownNavLinkPage>
 								</NavLink>
 							</NavLinks>
 						</NavItem>
-		
+
 						<NavItem>
-						    <NavIconLinks to="discover"
+							<NavIconLinks to="discover"
 								onClick={() => window.location.href = "https://discord.gg/WQpEx6wMqY"}
 							>
 								<img width="27" src={Discord} />
-								
 							</NavIconLinks>
 						</NavItem>
 						<NavItem>
-						    <NavIconLinks to="discover"
+							<NavIconLinks to="discover"
 								onClick={() => window.location.href = "https://twitter.com/genjiNFT"}
 							>
 								<img width="27" src={Twitter} />

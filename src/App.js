@@ -13,15 +13,15 @@ function App() {
 
   return (
     <div className="App">
-     <Router>
-      
+     <Router>      
        <NewNavbar />
        <Switch>
-         <Route path="/" component={Home} exact />
+         
          <Route path="/gachapon" component={Gachapon} exact />
          <Route path="/genjimerch" component={GenjiMerch} exact />
          <Route path="/roadmap" component={RoadMap} exact />
          <Route path="/terms-and-conditions" component={TNC} exact />
+         <Route path="/" component={Home} exact />
        </Switch>
      </Router>
     </div>

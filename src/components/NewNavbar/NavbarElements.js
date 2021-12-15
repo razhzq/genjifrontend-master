@@ -32,6 +32,7 @@ export const NavbarContainer = styled.div`
 	max-width: 1100px;
 	@media screen and (max-width: 992px) {
 		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 `
 
@@ -78,9 +79,10 @@ export const NavItem = styled.li`
   height: 80px;
 	@media screen and (max-width: 992px) {
 		width: 100%;
-		height: 50px;
+		// height: 50px;
 		display: flex;
     justify-content: center;
+		height: auto;
 	}
 `
 
@@ -93,7 +95,7 @@ export const NavLinks = styled(LinkS)`
 	height: 100%;
 	cursor: pointer;
 	&.active {
-	border-bottom: 3px solid #DA70D6;
+		border-bottom: 3px solid #DA70D6;
 	}
 	@media screen and (max-width: 1200px) {
 		padding: 0;
@@ -179,72 +181,91 @@ export const NavWrapper = styled.div`
 `
 
 export const DropdownHeader = styled.div`
-    height: 100%;
-    width: 100%;
-    display: block;
-    cursor: pointer;
-    line-height: 30px;
-    height: 30px;
-    color: whitesmoke;
-    z-index: 2;
-    position: relative;
-    -webkit-transition: border-radius .1s linear, background .1s linear, z-index 0s linear;
-    -webkit-transition-delay: .8s;
-    text-align: center;
+	height: 100%;
+	width: 100%;
+	display: block;
+	cursor: pointer;
+	// line-height: 30px;
+	// height: 30px;
+	color: whitesmoke;
+	z-index: 2;
+	position: relative;
+	-webkit-transition: border-radius .1s linear, background .1s linear, z-index 0s linear;
+	-webkit-transition-delay: .8s;
+	text-align: center;
+	@media screen and (max-width: 992px) {
+		padding: 10px 1rem;
+		line-height: unset;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1rem;
+		width: fit-content;
+		transition: all 0.2s ease-in-out;
+		:hover {			
+			background: #474747;			
+			border-radius: 50px;
+		}
+	}
 `
 export const DropdownContainer = styled.div`
-    position: absolute;
-    display: block;
-    z-index: 1;
-    height: 0;
-    width: 180px;
-    -webkit-transition: height .5s ease;
-    -webkit-transition-delay: .4s;
-    box-shadow: 0 1px 2px rgba(0,0,0,.4);
-
+	position: absolute;
+	display: block;
+	z-index: 1;
+	height: auto;
+	width: 180px;
+	-webkit-transition: height .5s ease;
+	-webkit-transition-delay: .4s;
+	box-shadow: 0 1px 2px rgba(0,0,0,.4);
+	@media screen and (max-width: 992px) {
+		
+		position: unset;		
+	}
 ` 
 export const DropdownList = styled.ul`
-    background: #fff;
-    margin: 0;
+	background: #fff;
+	margin: 0;
 	margin-top: 10px;
-    padding: 0;
-    height: 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+	padding: 0;
+	height: auto;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	transition: height 0.3s ease;
-
+	background: transparent;
 	:active {
 		height: 100%;
         overflow: auto;
 	}
+	@media screen and (max-width: 992px) {		
+		
+	}
 
 `
 export const ListItem = styled.li`
-     list-style: none;
-    text-align: left;
-    color: #fff;
-    font-size: 14px;
-    line-height: 30px;
-    height: 30px;
-    padding-left: 10px;
-    border: 1px solid #fff;
+	list-style: none;
+	text-align: left;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	padding-left: 10px;
+	border: 1px solid #fff;
 	border-radius: 5px;
-	
-    
+	    
 	:hover {
 		background: #eee;
-        color: #333;
+    color: #333;
 	}
 	
 	:last-of-type {
 		border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 	}
 `
 
 
 export const NavIconLinks = styled(LinkS)`
-    color: #fff;
+  color: #fff;
 	display: flex;
 	align-items: center;
 	text-decoration: none;
@@ -258,14 +279,14 @@ export const NavIconLinks = styled(LinkS)`
 	border: 1px solid #fff;
 
 	background-image: linear-gradient(to top, #000 50%, transparent 50%);
-    background-size: 100% 200%;
-    background-position: top;
-    transition: background-position 0.5s ease-in-out; /** I've changed the time for demo purposes **/
-    color: black;
+	background-size: 100% 200%;
+	background-position: top;
+	transition: background-position 0.5s ease-in-out; /** I've changed the time for demo purposes **/
+	color: black;
 
 	:hover {
 		background-position: bottom;
-}
+	}
 
     
 	&.active {
@@ -274,4 +295,35 @@ export const NavIconLinks = styled(LinkS)`
 	@media screen and (max-width: 1200px) {
 		padding: 0;
 	}
+	@media screen and (max-width: 992px) {
+		padding: 8px;
+		width: auto;
+	}
+`
+export const DropDownNavLinkPage = styled.div`
+	border-radius: 50px;
+	background: transparent;
+	white-space: nowrap;
+	padding: 10px 1rem;
+	color: #fff;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+
+  :hover {
+		transition: all 0.2s ease-in-out;
+		background: #474747;
+		color: #000;
+	}
+	@media screen and (max-width: 992px) {
+		width: 100%;
+		:hover {
+			transition: unset;
+			background: unset;
+			color: #fff
+		}
+	}	
 `
