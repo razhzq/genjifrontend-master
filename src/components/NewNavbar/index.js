@@ -27,8 +27,6 @@ import Twitter from '../../assets/twitterlogo.png'
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
-
-
 const NewNavbar = () => {
 
 	const history = useHistory();
@@ -36,9 +34,10 @@ const NewNavbar = () => {
 	const connectWallet = () => {
 		try {
 			const resp = window.solana.connect();
+			console.log(resp)
 			resp.publickKey.toString()
 		} catch (err) {
-
+			console.log(err)
 		}
 	}
 

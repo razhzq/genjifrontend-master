@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 
 import CollectionInfo from "../components/CollectionInfo";
 import DiscordJoin from "../components/DiscordJoin";
@@ -11,21 +12,36 @@ import Team from "../components/Team";
 import RoadmapPhase from "../components/Phase";
 import ImageTitle from "../components/ImageTitle";
 
+import LoadingVideo from "../assets/video/LoadingAnimationGenji_Final.mp4"
 
 const Home = () => {
+
+  const [loaded, setLoaded] = useState(false)
+
   return (
-    <div className="home">
-      <HeroSection />
-      <Intro />
-      <SliderSection />
-      <RoadMapJap />
-      <RoadmapPhase />
-      <ImageTitle />
-      <Team />
-      <FAQ />
-      <DiscordJoin />
-      <Footer />
-    </div>
+    <>
+      {
+        !loaded && (
+          <div className="video-loading">
+            <video width="100%" height="100%" autoPlay muted onEnded={() => setLoaded(true)}>
+              <source src={LoadingVideo} type="video/mp4" />
+            </video>
+          </div>
+        )
+      }
+      <div className="home">
+        <HeroSection />
+        <Intro />
+        <SliderSection />
+        <RoadMapJap />
+        <RoadmapPhase />
+        <ImageTitle />
+        <Team />
+        <FAQ />
+        <DiscordJoin />
+        <Footer />
+      </div>
+    </>
   );
 }
 
