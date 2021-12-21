@@ -14,6 +14,9 @@ export const HeroContainer = styled.div`
 		height: 55vw;
 		min-height: 450px;
 	}
+	@media screen and (max-width: 600px) {
+		min-height: 350px;
+	}
 `
 
 export const HeroBg = styled.div`
@@ -38,6 +41,9 @@ export const ImageBg = styled.img`
 	height: 800px;
 	@media screen and (max-width: 768px) {
 		height: 100%;
+	}
+	@media screen and (max-width: 600px) {
+		height: auto;
 	}
 `
 export const HeroContent = styled.div`
@@ -76,14 +82,17 @@ export const HeroCountdown = styled.div`
 			// visibility: hidden;
 			// display: none;
     }
+		@media screen and (max-width: 600px) {
+			margin-top: 330px
+		}
     @media screen and (max-width: 480px) {
       font-size: 32px;
 			width: 90%;
     }
 
-	@media screen and (max-width: 1600px) {
-		margin-left: auto;
-	}
+		@media screen and (max-width: 1600px) {
+			margin-left: auto;
+		}
       
 `
 
