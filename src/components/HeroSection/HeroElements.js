@@ -39,6 +39,12 @@ export const HeroBg = styled.div`
 export const ImageBg = styled.img`
 	width: 80%;
 	height: 800px;
+	@media screen and (max-width: 1400px) {
+		width: 100%
+	}
+	@media screen and (max-width: 992px) {
+		height: 600px;
+	}
 	@media screen and (max-width: 768px) {
 		height: 100%;
 	}
@@ -74,6 +80,9 @@ export const HeroCountdown = styled.div`
 		align-items: center;
 		font-size: 20px;
 		padding-bottom: 10px;
+		@media screen and (max-width: 992px) {
+			margin-top: 450px;
+		}
 		@media screen and (max-width: 768px) {
 			width: 350px;
 			border-radius: 50px;
