@@ -33,7 +33,7 @@ const HeroSection = () => {
         seconds: Math.floor((difference / 1000) % 60),
       };
     }
-   // console.log(timeLeft);
+    // console.log(timeLeft);
     return timeLeft;
   };
 

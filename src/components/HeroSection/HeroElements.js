@@ -58,26 +58,27 @@ export const HeroContent = styled.div`
 export const HeroCountdown = styled.div`
 	  width: 80%;
 		max-width: 700px;
-      background-color: #fff;
-      border-radius: 90px;
-      margin-top: 850px;
+		background-color: #fff;
+		border-radius: 90px;
+		margin-top: 850px;
 	  margin-left: auto;
 		margin-right: auto;
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      font-size: 20px;
-      padding-bottom: 10px;
-      @media screen and (max-width: 768px) {
-        width: 350px;
-        border-radius: 50px;
-        margin-top: 200px;
-        padding-bottom: 5px;
-        visibility: hidden;
-				display: none;
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+		font-size: 20px;
+		padding-bottom: 10px;
+		@media screen and (max-width: 768px) {
+			width: 350px;
+			border-radius: 50px;
+			margin-top: 500px;
+			padding-bottom: 5px;
+			// visibility: hidden;
+			// display: none;
     }
     @media screen and (max-width: 480px) {
-        font-size: 32px;
+      font-size: 32px;
+			width: 90%;
     }
 
 	@media screen and (max-width: 1600px) {
@@ -92,22 +93,18 @@ export const HeroH1 = styled.h1`
 	text-align: center;
 
 	@media screen and (max-width: 768px) {
-			font-size: 15px;
+		font-size: 15px;
 	}
 
-	@media screen and (max-width: 480px) {
-			font-size: 32px;
-	}
+	// @media screen and (max-width: 480px) {
+	// 		font-size: 32px;
+	// }
 
 
 `
 
 export const CountdownWrapper = styled.div`
-	font-size: 32px;
-
-
-	    
-
+	font-size: 32px;  
 `
 
 export const HeroJap = styled.div`
