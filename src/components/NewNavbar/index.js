@@ -31,14 +31,23 @@ const NewNavbar = () => {
 
 	const history = useHistory();
 
+	const [conntected, setConnected] = useState(false)
+
 	const connectWallet = () => {
-		try {
-			const resp = window.solana.connect();
-			console.log(resp)
-			resp.publickKey.toString()
-		} catch (err) {
+		// try {
+		// 	const resp = window.solana.connect();			
+		// 	resp.publickKey.toString()
+		// } catch (err) {
+		// 	console.log(err)
+		// }
+		window.solana.connect().then(res => {
+			console.log(res)
+			setConnected(true)
+			// res.publickKey.toString()
+		}).catch(err => {
 			console.log(err)
-		}
+			setConnected(false)
+		})
 	}
 
 	const [scrollNav, setScrollNav] = useState(false);
@@ -69,7 +78,7 @@ const NewNavbar = () => {
 	const toggleDrop = () => setIsAbout(!isAbout);
 	const toggling = () => setIsOpen(!isOpen);
 
-	useEffect(() => { Aos.init({ duration: 1000 }); }, []);	
+	useEffect(() => { Aos.init({ duration: 1000 }); }, []);
 
 	return (
 		<Nav scrollNav={scrollNav}>
@@ -85,7 +94,7 @@ const NewNavbar = () => {
 							<NavLinks >
 								<NavLink>
 									<DropDownNavLinkPage>
-										<DropdownHeader onClick={() => {toggling(); setIsAbout(false)}}>
+										<DropdownHeader onClick={() => { toggling(); setIsAbout(false) }}>
 											Community
 										</DropdownHeader>
 
@@ -98,7 +107,7 @@ const NewNavbar = () => {
 													<ListItem  >Staking</ListItem>
 													<ListItem >Casino</ListItem>
 
-													<ListItem onClick={() => {history.push('/gachapon'); setIsOpen(false)}}>
+													<ListItem onClick={() => { history.push('/gachapon'); setIsOpen(false) }}>
 														<Link
 															style={{ textDecoration: 'none', color: 'inherit' }}
 															to="/gachapon"
@@ -132,7 +141,7 @@ const NewNavbar = () => {
 							<NavLinks to="discover">
 								<NavLink>
 									<DropDownNavLinkPage to="">
-										<DropdownHeader onClick={() => {toggleDrop(); setIsOpen(false)}}>
+										<DropdownHeader onClick={() => { toggleDrop(); setIsOpen(false) }}>
 											About
 										</DropdownHeader>
 
@@ -140,12 +149,12 @@ const NewNavbar = () => {
 											<DropdownContainer>
 												<DropdownList >
 													<ListItem  >Whitepaper</ListItem>
-													<ListItem onClick={() => {history.push('/roadmap'); setIsAbout(false)}} >
-														<Link 
-															style={{ textDecoration: 'none', color: 'inherit' }} 
+													<ListItem onClick={() => { history.push('/roadmap'); setIsAbout(false) }} >
+														<Link
+															style={{ textDecoration: 'none', color: 'inherit' }}
 															to="/roadmap"
 															onClick={(e) => { e.preventDefault(); }}
-															>
+														>
 															Roadmap
 														</Link>
 													</ListItem>
@@ -175,7 +184,11 @@ const NewNavbar = () => {
 						</NavItem>
 					</NavMenu>
 					<NavBtn>
-						<NavBtnLink onClick={connectWallet} to="">Connect Wallet</NavBtnLink>
+						<NavBtnLink onClick={connectWallet} to="">
+							{
+								conntected ? "Disconnect" : "Connect Wallet"
+							}
+						</NavBtnLink>
 					</NavBtn>
 				</NavWrapper>
 
