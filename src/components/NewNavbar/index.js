@@ -186,7 +186,7 @@ const NewNavbar = () => {
 					<NavBtn>
 						<NavBtnLink onClick={connectWallet} to="">
 							{
-								conntected ? "Disconnect" : "Connect Wallet"
+								conntected ? "Connected" : "Connect Wallet"
 							}
 						</NavBtnLink>
 					</NavBtn>

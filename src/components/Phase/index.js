@@ -20,7 +20,7 @@ const RoadmapPhase = () => {
               DigitalEyes)
             </p>
           </div>
-
+        {/* 
           <div className="phase-2">
             <h1>PHASE 2 (Q1 2022)</h1>
             <p>
@@ -38,6 +38,7 @@ const RoadmapPhase = () => {
               democratic process.
             </p>
           </div>
+          */}
         </div>
       </Accordion>
     </div>

@@ -61,7 +61,7 @@ const Team = () => {
 						<ImgWrap>
 							<Img src={Purple} />
 							<TeamH1>3D ARTIST</TeamH1>
-							<TeamH2>D</TeamH2>
+							<TeamH2>NOTDARREN</TeamH2>
 						</ImgWrap>
 					</TeamItem>
 
