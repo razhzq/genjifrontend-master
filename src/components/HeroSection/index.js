@@ -68,10 +68,12 @@ const HeroSection = () => {
           <HeroJapImg src={JapHero} />
         </HeroJap>
         <HeroDate data-aos="fade-up">
+          {/* 
           <HeroP>NOV</HeroP>
           <HeroP>30TH</HeroP>
           <HeroP>8PM</HeroP>
           <HeroP>SGT</HeroP>
+          */}
         </HeroDate>
         <HeroCountdown>
           <HeroH1>Countdown Mint Day:</HeroH1>

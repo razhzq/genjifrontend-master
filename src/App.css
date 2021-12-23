@@ -47,3 +47,9 @@
 .video-loading video {
   object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .video-loading {
+    display: none;
+  }
+}
